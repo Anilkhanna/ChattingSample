@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="ContactObject" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fromUserJid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isReadPending" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageBody" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MessageObject" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isMediaMessage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isOutgoing" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="me" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="media" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="mediaType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mediaURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senderDisplayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senderId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="OfflineObject" syncable="YES">
+        <attribute name="isOfflineUpdated" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="objClass" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="objData" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="objID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="objName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="objType" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ContactObject" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="MessageObject" positionX="-54" positionY="-9" width="128" height="210"/>
+        <element name="OfflineObject" positionX="-36" positionY="9" width="128" height="135"/>
+    </elements>
+</model>
